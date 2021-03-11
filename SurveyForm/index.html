@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for your participation</p>
+
+        <div id="form-container">
+
+            <form action="" id="survey-form">
+
+                <label class="default-label" for="name"id="name" required>Name</label><br>
+                <input class="default-input" type="text" id="name"  placeholder="Enter your name">
+
+                <label class="default-label" for="email" id="email" required>Email</label><br>
+                <input class="default-input" type="email" id="email" placeholder="Enter your email">
+
+                <label class="default-label" for="age" id="number-label">Age</label><br>
+                <input class="default-input" type="number" id="number" min="1" max="3" placeholder="Select your age">
+            
+                <label class="default-label" for="age" id="dropdown">Which option best describes your current role?</label><br>
+                <select placeholder="Select current role">
+                    <option value="" disabled selected hidden id="placeh">Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="fullTimeJob">Full Time Job</option>
+                    <option value="fullTimeLearner">Full Time Learner</option>
+                    <option value="notSay">Prefer not to say</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <p>Would you recommend us?</p>
+                <input type="radio" name="recommend" value="definitely">
+                <label class="recommend" for="recommend">Definitely</label><br>
+                <input type="radio" name="recommend" value="Maybe">
+                <label class="recommend" for="recommend">Maybe</label><br>  
+                <input type="radio" name="recommend" value="No">
+                <label class="recommend" for="recommend">No sure</label><br><br>
+           
+
+                <label for="favorite">What is your favorite feature about us?</label>
+                <select name="favorite" id="dropdown">
+                    <option value="">Select an option</option>
+                    <option value="challenges">Challenges</option>
+                    <option value="projects">Projects</option>
+                    <option value="community">Community</option>
+                    <option value="open">Open Source</option>
+
+                </select>
+
+                <p>What would you like to see improved?</p>
+                <label>
+                    <input type="checkbox" value="services">
+                    <label class="check" for="">Services</label><br>
+                </label>
+        
+                <label>
+                    <input type="checkbox" value="customer">
+                    <label class="check" for="customer">Customer care</label><br>
+                </label>
+                <label>
+                    <input type="checkbox" value="products">
+                    <label class="check" for="products">Products</label>
+                </label><br><br>
+
+                <label for="comments">Any comments or suggestions?</label>
+                <textarea name="" cols="30" rows="10"></textarea>
+            </form>
+
+            <div id="bt"><button id="button">Submit</button></div>
+        </div>
+    </div>
+    <a href="../index.html"><img src="../img/log-inw.png" alt=""></a>
+</body>
+</html>

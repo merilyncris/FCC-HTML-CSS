@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;}
+
+#header{
+    background-color: rgb(78, 90, 95);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   position: fixed;
+    top: 0;
+}
+
+#header-img{
+    width: 80px;
+    margin-left: 5rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    margin-right: 1rem;
+}
+
+li{
+    list-style: none;
+    padding:10px; 
+}
+
+li a{
+    text-decoration: none;
+    color:rgb(235, 231, 227);
+    font-size: 18px;
+}
+
+li a:hover{
+    color:rgb(212, 212, 31);
+}
+
+/******************SECTION ONE**************/
+
+.section-img{
+    width: 80px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+#section-one{
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#section-one div{
+    width: 60%;
+
+}
+
+#section-one div{
+    margin-top: 2.5rem;
+    padding-left: 3rem;
+}
+
+.item{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+
+}
+
+#video{
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+iframe{
+    margin: 0 auto;
+}
+
+#form-container{
+    margin-top: 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+#form-container p,
+#form-container input{
+    margin-bottom: 1.5rem;
+}
+
+input{
+    padding: 0.8em;
+    outline: none;
+}
+
+#footer{
+    width: 100%;
+    padding: 2rem;
+    background-color: #111;
+    color: cornsilk;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px){
+    .item{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        padding: 2rem;
+        justify-content: center;
+    
+    }
+
+    #section-one div{
+        width: 100%;
+    
+    }
+}
